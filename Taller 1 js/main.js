@@ -1,16 +1,22 @@
-/* 7. Programa que pida el ingreso del nombre y precio de un artículo y la
-cantidad que lleva el cliente. Mostrar lo que debe pagar el comprador
-en su factura. */
+/* 8. Programa que Ingrese por teclado:
+a. el valor del lado de un cuadrado para mostrar por pantalla el
+perímetro del mismo
+b. la base y la altura de un rectángulo para mostrar el área del
+mismo */
 
-let nombre = [];
-let cantidad = [];
-let precio = [];
-let total = [];
+let valor_Lado = 'Lado';
+let base = '';
+let altura = '';
 
-nombre = prompt(`Digite el nombre del articulo a llevar:`);
-cantidad = prompt(`Digite la cantidad del articulo a llevar:`);
-precio = prompt(`Digite el precio del articulo a llevar:`);
+valor_Lado = prompt(`Digite el valor del lado del cuadrado: `);
 
-total = parseInt(cantidad) * parseInt(precio);
+let perimetro = 4 * parseInt(valor_Lado);
 
-console.table(`Nombre: ${nombre} \nCantidad: ${cantidad} \nPrecio unidad: ${precio} \nTotal: ${total}`);
+alert(`El perimetro del cuadrado es de: ${perimetro} cm`);
+
+base = prompt(`Digite la base del rectangulo: `);
+altura = prompt(`Digite la altura del rectangulo: `);
+
+let area = parseInt(base) * parseInt(altura);
+
+alert(`El area del rectángulo es de ${area} cm`);
