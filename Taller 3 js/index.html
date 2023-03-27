@@ -1,0 +1,391 @@
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(146, 156, 156);">
+
+    <div class="imagenes-campus">
+        <img src="img/334018515_3413401262311897_8863148242789559263_n-removebg-preview.png" alt="" class="img-campus">
+        <img src="img/334018515_3413401262311897_8863148242789559263_n-removebg-preview.png" alt="" class="img-copia">
+    </div>
+
+    <div class="datos-campus p-2">
+
+        <fieldset>
+            <h1>Datos de contacto de las sedes de campus</h1>
+            <form id="myFormularioCampus">
+                
+                <label for="" class="col-12">Ciudad y/o Pais</label><br>
+                <input type="text" name="nombreSede" class="col-6 mt-1 text-center"><br><br>
+
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="col-4  mx-1">
+                        <label for="">Dirección</label><br>
+                        <input type="text" name="DireccionSede" class="col-12 text-center">
+                    </div>
+                    
+                    <div class="col-4 mx-1">
+                        <label for="" class="col-12">Telefono</label><br>
+                        <input type="text" name="telefonoSede" class="col-12 text-center">
+                    </div>
+                </div><br>
+
+                <input type="submit" class="botones" value="Guardar"><br><br>
+            </form>
+        </fieldset>
+
+    </div>
+
+    <br>
+
+    <div class="rol p-2">
+
+        <fieldset>
+            <h1>Elige el rol</h1>
+            <select id="formulario" class="col-4 py-1 text-center">
+                <option value="eleccion">Elegir</option>
+                <option value="form1">Trainer's</option>
+                <option value="form2">Camper's</option>
+                <option value="form3">Usuario nuevo</option>
+            </select>
+        </fieldset>
+        <br>
+
+    </div>
+
+    <br>
+
+    <div id="form1" class="formulario-trainers py-2" style="display: none">
+
+        <fieldset>
+            <h1>Datos de los Trainer's</h1>
+                <form id="myFormularioTrainer">
+                    <select name="sedeTrainer" class="col-4 py-1 text-center">
+                        <option>Selecciona una opción</option>
+                    </select><br><br>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4  mx-1">
+                            <label for="" class="col-12">Team</label>
+                            <select name="TeamTrainer" class="col-12 py-1 text-center">
+                                <option name="Trainer-Team-1">Team 1</option>
+                                <option name="Trainer-Team-2">Team 2</option>
+                                <option name="Trainer-Team-3">Team 3</option>
+                                <option name="Trainer-Team-4">Team 4</option>
+                            </select> <br>
+                        </div>
+
+                        <div class="col-4 mx-1">
+                            <label for="" class="col-12">Salón</label>
+                            <select name="Salon" class="col-12 py-1 text-center">
+                                <option name="Salon-Apolo">Apolo</option>
+                                <option name="Salon-Artemis">Artemis</option>
+                                <option name="Salon-Sputnik">Sputnik</option>
+                            </select> <br><br>
+                        </div>
+                    </div>
+
+                    <label for="" class="col-12">Nombre</label>
+                    <input type="text" name="nombreTrainer" class="col-6 text-center"><br><br>
+
+                    <div class="d-flex mx-1 justify-content-center">
+                        <div class="col-4">
+                            <label for="" class="col-12">Dirección</label>
+                            <input type="text" name="direccionTrainer" class="col-12 text-center"><br><br>
+                        </div>
+                        
+                        <div class="col-4 mx-1">
+                            <label for="" class="col-12">Teléfono</label>
+                            <input type="tel" name="telefonoTrainer" class="col-12 text-center"><br><br>
+                        </div>
+                    </div>
+                    
+                    <label for="" class="col-12">Email</label>
+                    <input type="email" name="emailTrainer" class="col-6 text-center"><br><br>
+
+                    <label for="" class="col-12">Horario clase del trainer</label>
+                    <input type="time" name="Horario-clase-trainer" class="col-4 text-center py-1"><br>
+                    
+                    <input type="submit" class="botones" value="Guardar"><br><br>
+                </form>
+        </fieldset>
+
+    </div>
+    
+    <br>
+
+    <div id="form2" class="formulario-campers py-2" style="display: none">
+
+        <fieldset>
+            <h1>Datos de los camper's</h1>
+                <form id="myFormularioCamper">
+                    <select name="sedeCamper" class="col-4 py-1 text-center">
+                        <option>Selecciona una opción</option>
+                    </select><br><br>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4  mx-1">
+                            <label for="" class="col-12">Team</label>
+                            <select name="TeamCamper" class="col-12 py-1 text-center">
+                                <option name="Camper-Team-1">Team 1</option>
+                                <option name="Camper-Team-2">Team 2</option>
+                                <option name="Camper-Team-3">Team 3</option>
+                                <option name="Camper-Team-4">Team 4</option>
+                            </select> <br>
+                        </div>
+
+                        <div class="col-4 mx-1">
+                            <label for="" class="col-12">Salón</label>
+                            <select name="Salon" class="col-12 py-1 text-center">
+                                <option name="Salon-Apolo">Apolo</option>
+                                <option name="Salon-Artemis">Artemis</option>
+                                <option name="Salon-Sputnik">Sputnik</option>
+                            </select> <br><br>
+                        </div>
+                    </div>
+
+                    <label for="" class="col-12">Nombre</label>
+                    <input type="text" name="nombreCamper" class="col-6 text-center"><br><br>
+
+                    <label for="" class="col-12">Teléfono</label>
+                    <input type="tel" name="telefonoCamper" class="col-4 text-center"><br><br>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="col-4">
+                            <label for="">Horario clase del ser</label>
+                            <input type="text" name="Salon-Ser" class="col-8 text-center my-2" placeholder="Ubicación">
+                            <input type="time" name="Horario-ser" class="col-7 text-center my-2 py-1"> <br><br>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="">Horario clase de ingles</label>
+                            <input type="text" name="Salon-Ingles" class="col-8 text-center my-2" placeholder="Ubicación">
+                            <input type="time" name="Horario-ingles" class="col-7 text-center my-2 py-1"> <br><br>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="col-4">
+                            <label for="" class="col-12">Modalidad</label>
+                            <select name="Modalidad-tecnica" class="col-7 text-center py-1">
+                                <option name="Modalidad-Electiva">Modalidad Electiva</option>
+                                <option name="Modalidad-Obligatoria">Modalidad Obligatoria</option>
+                            </select> <br><br>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="" class="col-12">Medio de transporte</label>
+                            <select name="Medio-Transporte" class="col-7 text-center py-1">
+                                <option name="Medio-Transporte-Moto">Moto</option>
+                                <option name="Medio-Transporte-Carro">Carro</option>
+                                <option name="Medio-Transporte-Bus">Bus</option>
+                                <option name="Medio-Transporte-Tren">Tren</option>
+                            </select> <br><br>
+                        </div>
+                    </div>
+                
+                    <label for="" class="col-12 my-1">Su mapa de aprendizaje es</label>
+                    <textarea name="Mapa-Aprendizaje" id="" cols="30" rows="4" readonly class="col-4 p-1 text-center">1- Bootstrap 5 
+2- JavaScript
+3- React
+4- Node Js</textarea> <br>
+
+                    <input type="submit" class="botones" value="Guardar"><br><br>
+                </form>
+        </fieldset>
+
+    </div>
+
+    <br>
+    
+    <div id="form3" class="formulario-ingreso-nuevo py-2" style="display: none">
+
+        <fieldset>
+            <h1>Datos de ingreso nuevo</h1>
+                <form id="myFormularioIngresoNuevo">
+                    <select name="sedeIngresoNuevo" class="col-4 py-1 text-center">
+                        <option>Selecciona una opción</option>
+                    </select><br><br>
+    
+                    <label for="" class="col-12">Nombre</label>
+                    <input type="text" name="nombreNuevo" class="col-6 text-center"><br><br>
+    
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4">
+                            <label for="" class="col-12">Dirección</label>
+                            <input type="text" name="direccionNuevo" class="col-11 text-center"><br><br>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="" class="col-12">Teléfono</label>
+                            <input type="tel" name="telefonoNuevo" class="col-11 text-center"><br><br>
+                        </div>
+                    </div>
+                    
+                    <label for="" class="col-12">Email</label>
+                    <input type="email" name="emailNuevo" class="col-6 text-center"><br><br>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4">
+                            <label for="" class="col-12">Cuantas asignaturas quiere registrar?</label>
+                            <input type="text" name="CantidadAsignaturas" class="col-6 text-center"><br><br>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="" class="col-12">Con cuantos creditos cuenta para este semestre?</label>
+                            <input type="text" name="CantidadCreditos" class="col-6 text-center"><br><br>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4">
+                            <label for="" class="col-12">En que nivel considera que se encuentra?</label>
+                            <select id="NivelCamper" class="col-6 text-center py-1">
+                                <option value="eleccion">Elegir</option>
+                                <option value="Nivel-Camper-Basico">Básico</option>
+                                <option value="Nivel-Camper-Intermedio">Intermedio</option>
+                                <option value="Nivel-Camper-Avanzado">Avanzado</option>
+                            </select> <br><br>
+                        </div>
+
+                        <div class="col-4">
+                            <label for="" class="col-12">Medio de transporte</label>
+                            <select name="Medio-Transporte" class="col-6 text-center py-1">
+                                <option name="Medio-Transporte-Moto">Moto</option>
+                                <option name="Medio-Transporte-Carro">Carro</option>
+                                <option name="Medio-Transporte-Bus">Bus</option>
+                                <option name="Medio-Transporte-Tren">Tren</option>
+                            </select> <br><br>
+                        </div>
+                    </div>
+
+                    <div id="Nivel-Camper-Basico" style="display: none; background-color: rgb(146, 156, 156);">
+                        <fieldset>
+                            <h1>Básico</h1>
+
+                                <label for="" class="col-12">Tipo de Modalidad</label>
+                                <select name="Modalidad-tecnica" class="col-3 text-center py-1">
+                                    <option name="Modalidad-Electiva">Electiva</option>
+                                    <option name="Modalidad-Obligatoria">Obligatoria</option>
+                                </select> <br><br>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus habilidades</label>
+                                <textarea name="habilidades" cols="40" rows="3" class="col-4 p-2"></textarea>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus metas en este programa</label>
+                                <textarea name="metas" cols="40" rows="3" class="col-4 p-2"></textarea>
+
+                                <label for="" class="col-12">Cuenta con conocimientos en leguajes de programacion?</label>
+                                <select id="LenguajesProgramacion" class="col-2 text-center py-1">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select> <br><br>
+
+                                <div id="Si">
+                                    <label for="" value="Si" class="col-12">Escriba que lenguajes de programación conoce?</label>
+                                    <textarea name="LenguajeSabe" cols="40" rows="3" class="col-4 p-2"></textarea>
+                                </div>
+
+                                <div id="No"></div>
+                        </fieldset>
+                    </div>
+
+                    <div id="Nivel-Camper-Intermedio" style="display: none; background-color: rgb(146, 156, 156);">
+                        <fieldset>
+                            <h1>Intermedio</h1>
+
+                                <label for="" class="col-12">Tipo de Modalidad</label>
+                                <select name="Modalidad-tecnica" class="col-3 text-center py-1">
+                                    <option name="Modalidad-Electiva">Electiva</option>
+                                    <option name="Modalidad-Obligatoria">Obligatoria</option>
+                                </select> <br><br>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus habilidades</label>
+                                <textarea name="habilidades" cols="40" rows="3" class="col-4 p-2"></textarea>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus metas en este programa</label>
+                                <textarea name="metas" cols="40" rows="3" class="col-4 p-2"></textarea><br>
+
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-4">
+                                        <label for="" class="col-12">Cuenta con conocimientos en HTML 5?</label>
+                                        <select id="LenguajesProgramacion" class="col-4 text-center py-1">
+                                            <option name="Si">Si</option>
+                                            <option name="No">No</option>
+                                        </select> <br><br>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="" class="col-12">Cuenta con conocimientos en CSS 3?</label>
+                                        <select id="LenguajesProgramacion" class="col-4 text-center py-1">
+                                            <option name="Si">Si</option>
+                                            <option name="No">No</option>
+                                        </select> <br><br>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-4">
+                                        <label for="" class="col-12">Cuenta con conocimientos en JavaScript?</label>
+                                        <select id="LenguajesProgramacion" class="col-4 text-center py-1">
+                                            <option name="Si">Si</option>
+                                            <option name="No">No</option>
+                                        </select> <br><br>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="" class="col-12">Cuenta con conocimientos en Base de datos?</label>
+                                        <select id="LenguajesProgramacion" class="col-4 text-center py-1">
+                                            <option name="Si">Si</option>
+                                            <option name="No">No</option>
+                                        </select> <br><br>
+                                    </div>
+                                </div>
+                            
+                        </fieldset>
+                    </div>
+
+                    <div id="Nivel-Camper-Avanzado" style="display: none; background-color: rgb(146, 156, 156);">
+                        <fieldset>
+                            <h1>Avanzado</h1>
+
+                                <label for="" class="col-12">Tipo de Modalidad</label>
+                                <select name="Modalidad-tecnica" class="col-3 text-center py-1">
+                                    <option name="Modalidad-Electiva">Electiva</option>
+                                    <option name="Modalidad-Obligatoria">Obligatoria</option>
+                                </select> <br><br>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus habilidades</label>
+                                <textarea name="habilidades" cols="40" rows="3" class="col-4 p-2"></textarea>
+
+                                <label for="" value="Si" class="col-12">Escriba cuales son sus metas en este programa</label>
+                                <textarea name="metas" cols="40" rows="3" class="col-4 p-2"></textarea><br>
+
+                                <label for="" value="Si" class="col-12">Escriba en que lenguajes de programación se destaca</label>
+                                <textarea name="destaca" cols="40" rows="3" class="col-4 p-2"></textarea>
+
+                        </fieldset>
+                    </div>
+                        
+                    <input type="submit" class="botones" value="Guardar"><br><br>
+                </form>
+        </fieldset>
+
+    </div>
+    
+</body>
+</html>

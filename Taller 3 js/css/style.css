@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedores generales */
+.imagenes-campus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+* input{
+    box-shadow: 10px 10px 9px rgb(82, 45, 45);
+}
+
+* select{
+    box-shadow: 10px 10px 9px rgb(46, 43, 43);
+}
+
+* textarea{
+    box-shadow: 10px 10px 9px rgb(128, 108, 108);
+}
+
+.datos-campus,
+.rol,
+.formulario-trainers,
+.formulario-campers,
+.formulario-ingreso-nuevo {
+    background-color: rgb(201, 201, 201);
+    width: 80%;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    box-shadow: 10px 10px 9px rgb(24, 4, 4);
+}
+
+.formulario-campers{
+    margin-top:-22px
+}
+
+.formulario-ingreso-nuevo{
+    margin-top:-45px;
+    margin-bottom: 30px;
+}
+/* ---------------------- */
+
+.img-campus{
+    width: 250px;
+    display: flex;
+}
+
+.img-copia{
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    width: 250px;
+    justify-content: center;
+}
+
+.datos-campus label,
+.formulario-trainers label,
+.formulario-campers label,
+.formulario-ingreso-nuevo label {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+#Nivel-Camper-Basico label,
+#Nivel-Camper-Intermedio label,
+#Nivel-Camper-Avanzado label {
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.botones{
+    margin-top: 10px;
+    padding: 6px 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+.botones:hover{
+    padding: 6px 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(148, 161, 161);
+}
+
+.formulario-campers textarea,
+.formulario-ingreso-nuevo textarea {
+    resize: none;
+}
