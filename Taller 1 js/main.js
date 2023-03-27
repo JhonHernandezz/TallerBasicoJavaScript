@@ -1,20 +1,54 @@
-/* 5. Construir el algoritmo que lea por teclado dos números
-si el primero es mayor al segundo informar su suma y diferencia
-en caso contrario
-informar el producto y la división del primero respecto al segundo. */
- 
-let num1 = '';
-let num2 = '';
+/* 6. Construir el algoritmo en Javascript con n cantidad de estudiantes
+que lea el nombre, el sexo y la nota definitiva 
 
-num1 = prompt(`Digite el número 1: `);
-num2 = prompt(`Digite el número 2: `);
+halle al estudiante con la mayor nota 
+y al estudiante con la menor nota 
+cuantos eran hombres y cuantos mujeres. */
 
-if(num1 > num2){
-    let suma = parseInt(num1) + parseInt(num2);
-    let resta = parseInt(num1) - parseInt(num2);
-    console.log(`La suma del número ${num1} y el número ${num2} es igual a: ${suma} \nY la diferencia es de: ${resta}`);
-} else{
-    let division = parseInt(num1) / parseInt(num2);
-    let multiplicacion = parseInt(num1) * parseInt(num2);
-    console.log(`El producto del número ${num1} y el número ${num2} es: ${multiplicacion} \nY la división del número ${num1} y el número ${num2} es igual a: ${division.toFixed(2)}`);
+let nota = '';
+let estudiante = '';
+let sexo = '';
+
+let masculino = 0;
+let femenimo = 0;
+
+let calificacionMayor = 0;
+let calificacionMenor = 100;
+
+let nombreCalificacionMayor = "";
+let nombreCalificacionMenor = "";
+
+let cantidad = prompt("Digite la cantidad de estudiantes a evaluar: ");
+
+for (i=0; i<cantidad; i++){
+    estudiante = prompt(`Digite el nombre del estudiante #${i +1}`);
+    sexo = prompt(`Digite el sexo del estudiante "M" o "F" #${i +1}`);
+    nota = parseFloat(prompt(`Digite la nota del estudiante de 1 - 100 #${i +1}`));
+
+    if( nota >= 0 && nota <= 100){
+        if (nota > calificacionMayor) {
+            calificacionMayor = nota;
+            nombreCalificacionMayor = estudiante;
+        }
+    
+        if (nota < calificacionMenor) {
+            calificacionMenor = nota;
+            nombreCalificacionMenor = estudiante;
+        }
+
+    } else{
+        alert("Digite una nota correcta!");
+        break;
+    }
+
+    if (sexo === "M" ){
+        masculino++;
+    } else if (sexo === "F" ){
+        femenimo++;
+    }
+
 }
+
+console.log(`${nombreCalificacionMayor} obtuvo una nota de: ${calificacionMayor} y fue el estudiante con el mejor desempeño`);
+console.log(`${nombreCalificacionMenor} obtuvo una nota de: ${calificacionMenor} y fue el estudiante con el peor desempeño`);
+console.log(`En la clase hay un total de: ${masculino} hombres y ${femenimo} mujeres`);
