@@ -7,17 +7,18 @@ el Standard Grading System.
 También el programa dará una pequeña pero valiosa recomendación al usuario respecto a su nivel de estudio y calidad como estudiante. */
 
 let listado = [
-    {tradicional: "90 - 100", point: "12 - 14", letter:"A", SBGRatting: 5, ProficiencyLevel: "Exceeds proficiency"},
-    {tradicional: "80 - 89", point: "9 - 11", letter:"B", SBGRatting: 4, ProficiencyLevel: "Demostrates proficiency"},
-    {tradicional: "70 - 79", point: "6 - 8", letter:"C", SBGRatting: 3, ProficiencyLevel: "Approaches proficiency"},
-    {tradicional: "60 - 69", point: "3 - 5", letter:"D", SBGRatting: 2, ProficiencyLevel: "Falls well below proficiency"},
-    {tradicional: "< 60", point: "1 - 2", letter:"E", SBGRatting: 1, ProficiencyLevel: "Lacks all proficiency"},
-    {tradicional: "0", point: "0", letter:"F", SBGRatting: 0, ProficiencyLevel: "No attempt made"}
+    {tradicional: "90 - 100", point: "12 - 14", letter:"A", SBGRatting: 4},
+    {tradicional: "80 - 89", point: "9 - 11", letter:"B", SBGRatting: 3},
+    {tradicional: "70 - 79", point: "6 - 8", letter:"C", SBGRatting: 2},
+    {tradicional: "60 - 69", point: "3 - 5", letter:"D", SBGRatting: 1},
+    {tradicional: "< 60", point: "1 - 2", letter:"E", SBGRatting: 0},
+    {tradicional: "0", point: "0", letter:"Z", SBGRatting: 0}
 ];
 
 console.table(listado);
 
 let opciones = prompt(`
+      -> Digite una de las siguientes opciones:
 1.   -> Nota traditional's: 
 2.   -> Nota por point's:
 3.   -> Clasificación por letter's:
