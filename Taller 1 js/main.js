@@ -1,42 +1,34 @@
-/* 9. N atletas han pasado a finales en salto triple en los juegos
-olímpicos femenino de 2022. 
+/* 10. Desarrolle un programa en javascript cíclico que capture un dato
+numérico cada vez, y los vaya acumulando. El programa se
+detiene cuando el usuario digita un cero. El programa debe
+mostrar: LA SUMATORIA DE LOS VALORES, EL VALOR DEL
+PROMEDIO, CUÁNTOS VALORES FUERON DIGITADOS, MAYOR
+VALOR Y MENOR VALOR. */
 
-Diseñe un programa que pida por teclado 
-los nombres de cada atleta finalista 
-y a su vez, sus marcas del salto en metros. 
+let suma = 0;
+let contador = 0;
+let maximo = Number.NEGATIVE_INFINITY;
+let minimo = Number.POSITIVE_INFINITY;
 
-Informar el nombre de la atleta
-campeona que se quede con la medalla de oro y si rompió
-récord, reportar el pago que será de 500 millones. El récord
-esta en 15,50 metros. */
-
-let record = 15.50;
-
-let personas ={
-    name: [],
-    marcas: []
+while(true){
+    let valor = parseInt(prompt("Ingrese un número:"));
+        if(valor === 0){
+            break;
+        }
+    suma += valor;
+    contador++;
+        if(valor > maximo){
+            maximo = valor;
+        }
+        if(valor < minimo){
+            minimo = valor;
+        }
 }
 
-let finalistas = Number(prompt("Digite la cantidad de finalistas: "));
+let promedio = suma / contador;
 
-for(i=0; i<finalistas; i++){
-    let nombre = prompt(`Digite el nombre del finalista #${i+1}`);
-    let marca = Number(prompt(`Digite la marca del finalista #${i+1}`));
-
-    if(marca >= record){
-        alert(`${nombre} rompio el record ${record} con una marca de ${marca} y gano 500 millones :)`)
-
-        record = marca;
-    }
-
-    personas.name.unshift(nombre);
-    personas.marcas.unshift(marca);
-}
-
-function ganador(data){
-    let marcaGanador = Math.max(...data.marcas)
-    let posicionGanador = data.marcas.indexOf(marcaGanador)
-
-    alert(`${data.name[posicionGanador]} con una marca de: ${data.marcas[posicionGanador]}`)
-}
-ganador(personas)
+console.log("La sumatoria de los valores es:", suma);
+console.log("El valor del promedio es:", promedio);
+console.log("Cantidad de valores ingresados:", contador);
+console.log("El valor máximo ingresado es:", maximo);
+console.log("El valor mínimo ingresado es:", minimo);
