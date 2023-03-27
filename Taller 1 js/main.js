@@ -1,26 +1,20 @@
-/* 4. Construir el algoritmo que solicite el nombre y edad de 3
-personas y determine el nombre de la persona con mayor edad. */
+/* 5. Construir el algoritmo que lea por teclado dos números
+si el primero es mayor al segundo informar su suma y diferencia
+en caso contrario
+informar el producto y la división del primero respecto al segundo. */
+ 
+let num1 = '';
+let num2 = '';
 
-let persona1 = '';
-let edad1 = '';
-let persona2 = '';
-let edad2 = '';
-let persona3 = '';
-let edad3 = '';
+num1 = prompt(`Digite el número 1: `);
+num2 = prompt(`Digite el número 2: `);
 
-persona1 = prompt('Digite el nombre de la primera persona: ');
-edad1 = prompt(`Digite la edad de ${persona1}`);
-persona2 = prompt('Digite el nombre de la segunda persona: ');
-edad2 = prompt(`Digite la edad de ${persona2}`);
-persona3 = prompt('Digite el nombre de la tercera persona: ');
-edad3 = prompt(`Digite la edad de ${persona3}`);
-
-if(edad1 > edad2){
-    alert(`${persona1} es mayor con una edad de: ${edad1} años`);
-
-    } else if(edad2 > edad3){
-        alert(`${persona2} es mayor con una edad de: ${edad2} años`);
-
-    } else{
-        alert(`${persona3} es mayor con una edad de: ${edad3} años`);
+if(num1 > num2){
+    let suma = parseInt(num1) + parseInt(num2);
+    let resta = parseInt(num1) - parseInt(num2);
+    console.log(`La suma del número ${num1} y el número ${num2} es igual a: ${suma} \nY la diferencia es de: ${resta}`);
+} else{
+    let division = parseInt(num1) / parseInt(num2);
+    let multiplicacion = parseInt(num1) * parseInt(num2);
+    console.log(`El producto del número ${num1} y el número ${num2} es: ${multiplicacion} \nY la división del número ${num1} y el número ${num2} es igual a: ${division.toFixed(2)}`);
 }
