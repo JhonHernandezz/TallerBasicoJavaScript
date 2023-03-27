@@ -1,22 +1,42 @@
-/* 8. Programa que Ingrese por teclado:
-a. el valor del lado de un cuadrado para mostrar por pantalla el
-perímetro del mismo
-b. la base y la altura de un rectángulo para mostrar el área del
-mismo */
+/* 9. N atletas han pasado a finales en salto triple en los juegos
+olímpicos femenino de 2022. 
 
-let valor_Lado = 'Lado';
-let base = '';
-let altura = '';
+Diseñe un programa que pida por teclado 
+los nombres de cada atleta finalista 
+y a su vez, sus marcas del salto en metros. 
 
-valor_Lado = prompt(`Digite el valor del lado del cuadrado: `);
+Informar el nombre de la atleta
+campeona que se quede con la medalla de oro y si rompió
+récord, reportar el pago que será de 500 millones. El récord
+esta en 15,50 metros. */
 
-let perimetro = 4 * parseInt(valor_Lado);
+let record = 15.50;
 
-alert(`El perimetro del cuadrado es de: ${perimetro} cm`);
+let personas ={
+    name: [],
+    marcas: []
+}
 
-base = prompt(`Digite la base del rectangulo: `);
-altura = prompt(`Digite la altura del rectangulo: `);
+let finalistas = Number(prompt("Digite la cantidad de finalistas: "));
 
-let area = parseInt(base) * parseInt(altura);
+for(i=0; i<finalistas; i++){
+    let nombre = prompt(`Digite el nombre del finalista #${i+1}`);
+    let marca = Number(prompt(`Digite la marca del finalista #${i+1}`));
 
-alert(`El area del rectángulo es de ${area} cm`);
+    if(marca >= record){
+        alert(`${nombre} rompio el record ${record} con una marca de ${marca} y gano 500 millones :)`)
+
+        record = marca;
+    }
+
+    personas.name.unshift(nombre);
+    personas.marcas.unshift(marca);
+}
+
+function ganador(data){
+    let marcaGanador = Math.max(...data.marcas)
+    let posicionGanador = data.marcas.indexOf(marcaGanador)
+
+    alert(`${data.name[posicionGanador]} con una marca de: ${data.marcas[posicionGanador]}`)
+}
+ganador(personas)
