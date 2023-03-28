@@ -5,8 +5,7 @@ import myAside from "./components/myAside.js";
 import mySeccion from "./components/mySeccion.js";
 import myFooter from "./components/myFooter.js";
 
-myHeader.listTitle();
-myHeader.listCompany(); 
+myHeader.show();
 
 myBaner.showImage();
 myBaner.listTitleBanner();

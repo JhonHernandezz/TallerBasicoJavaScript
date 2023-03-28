@@ -9,7 +9,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/Rolling_in_the_Deep",
             },
-            image: "../img/adelle-1.jpg",
+            image: "img/adelle-1.jpg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -23,7 +23,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/Someone_Like_You_(canci%C3%B3n_de_Adele)",
             },
-            image: "../img/adelle-2.jpeg",
+            image: "img/adelle-2.jpeg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -37,7 +37,7 @@ export default {
                 name: "Continuar...",
                 href: "https://en.wikipedia.org/wiki/Set_Fire_to_the_Rain",
             },
-            image: "../img/adelle-3.png",
+            image: "img/adelle-3.png",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -51,7 +51,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/Skyfall",
             },
-            image: "../img/adelle-4.jpg",
+            image: "img/adelle-4.jpg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -65,7 +65,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/When_We_Were_Young",
             },
-            image: "../img/adelle-5.jpg",
+            image: "img/adelle-5.jpg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -79,7 +79,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/Hello_(canci%C3%B3n_de_Adele)",
             },
-            image: "../img/adelle-6.jpg",
+            image: "img/adelle-6.jpg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
@@ -93,7 +93,7 @@ export default {
                 name: "Continuar...",
                 href: "https://es.wikipedia.org/wiki/Oh_My_God_(canci%C3%B3n_de_Adele)",
             },
-            image: "../img/adelle-7.jpg",
+            image: "img/adelle-7.jpg",
                 showImage(){
                     document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
                 }
