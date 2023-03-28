@@ -104,12 +104,36 @@ export default{
         }
     ],
 
-    showAside(){
+    show(){ 
+
+        const ws = new Worker("storage/wsMyAside.js", {type: "module"})
+
+        let id = [];
+        let count = 0;
+    
+            ws.postMessage({module: "data", data : this.nav});
+    
+            id = ["#Aside"];
+    
+                ws.addEventListener("message", (e) => {
+    
+                    let doc = new DOMParser().parseFromString(e.data, "text/html");
+    
+                    document.querySelector(id[count]).append(...doc.body.children);
+    
+                    (id.length-1===count) ? ws.terminate() : count++;
+    
+                })
+        
+
+    },
+
+    /* showAside(){
         const data = this.nav.map((val, id) => {
             return(
                 (val.link)
-                ?this.list(val) /* if */
-                :this.cards(val) /* else */
+                ?this.list(val) 
+                :this.cards(val) 
             )
         });
 
@@ -128,5 +152,5 @@ export default{
         <h4 class="fst-italic">${p1.title}</h4>
         <ol class="list-unstyled mb-0"> ${p1.link.map((val, id) => `<li><a href="${val.href}">${val.name}</a></li>`).join("")}</ol>
       </div> `;
-    }
+    } */
 }

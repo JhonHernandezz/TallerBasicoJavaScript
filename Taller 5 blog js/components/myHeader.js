@@ -22,6 +22,8 @@ export default{
         },
     ],
 
+
+    // WORKER LIST 
     show(){
         // Creamos el worker en una constante
         const ws = new Worker("storage/wsMyHeader.js", {type: "module"})
@@ -56,4 +58,6 @@ export default{
             })
 
     }
+    // ----------------------------------------------------------------
+
 }

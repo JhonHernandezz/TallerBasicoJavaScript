@@ -8,13 +8,14 @@ import myFooter from "./components/myFooter.js";
 myHeader.show();
 
 myBaner.showImage();
-myBaner.listTitleBanner();
-myBaner.listContentBanner();
-myBaner.Button();
+myBaner.show();
+// myBaner.listContentBanner();
+// myBaner.Button();
 
 myPost.listSliderCardTitle(); 
 
-myAside.showAside();
+// myAside.showAside();
+myAside.show();
 
 mySeccion.SeccionFrom();
 mySeccion.SeccionFirst();
@@ -25,4 +26,5 @@ mySeccion.SeccionCaracterist();
 mySeccion.SeccionTable();
 mySeccion.SeccionBetsConcerts();
 
-myFooter.myFooter();
+// myFooter.myFooter();
+myFooter.show();

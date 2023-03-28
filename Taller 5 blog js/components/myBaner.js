@@ -4,10 +4,14 @@ export default{
         document.querySelector(".Style-img").style.backgroundImage = `url(${this.imagen})`;
     },
 
-    TitleBanner: {
+    ContentBanner: {
             title: "Adele Laurie Blue Adkins",
+            content: "Es una cantautora y multinstrumentista británica, es una de las artistas musicales con mayores ventas del mundo, con más de 120 millones de ventas entre discos y sencillos.​ ",
+            name:"Continuar...",
+            href:"https://es.wikipedia.org/wiki/Adele"
     },
 
+    /* 
     ContentBanner: {
             content: "Es una cantautora y multinstrumentista británica, es una de las artistas musicales con mayores ventas del mundo, con más de 120 millones de ventas entre discos y sencillos.​ ",
     },
@@ -16,7 +20,9 @@ export default{
             name:"Continuar...",
             href:"https://es.wikipedia.org/wiki/Adele"
     },
+    */
 
+    // WORKER LIST 
     show(){
         const ws = new Worker("storage/wsMyBanner.js", {type: "module"});
 
@@ -24,9 +30,7 @@ export default{
 
         let count = 0;
 
-        ws.postMessage({module: "listTitleBanner", data: this.TitleBanner});
-        ws.postMessage({module: "listContentBanner", data: this.ContentBanner})
-        ws.postMessage({module: "Button", data: this.btn})
+        ws.postMessage({module: "contentBanner", data: this.ContentBanner});
 
         id = [".TitleBanner", ".ContentBanner", ".Btn-Banner"];
 
@@ -40,4 +44,5 @@ export default{
 
             })
     }
+    // ----------------------------------------------------------------
 }
