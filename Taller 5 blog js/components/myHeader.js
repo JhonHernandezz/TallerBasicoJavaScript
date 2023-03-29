@@ -1,30 +1,13 @@
+import config from "../storage/config.js";
 export default{
-    title: {
-            name: "Adele",
-            href: "#"
-    },
-    company: [
-        {
-            name: "19",
-            href: "#"
-        },
-        {
-            name: "21",
-            href: "#"
-        },
-        {
-            name: "25",
-            href: "#"
-        },
-        {
-            name: "30",
-            href: "#"
-        },
-    ],
-
-
+    
     // WORKER LIST 
     show(){
+        
+        config.dataMyHeader();
+        Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));
+
+
         // Creamos el worker en una constante
         const ws = new Worker("storage/wsMyHeader.js", {type: "module"})
 

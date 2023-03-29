@@ -10,9 +10,6 @@ export default {
                 href: "https://es.wikipedia.org/wiki/Rolling_in_the_Deep",
             },
             image: "img/adelle-1.jpg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
         {
             title: "Someone Like You",
@@ -24,10 +21,9 @@ export default {
                 href: "https://es.wikipedia.org/wiki/Someone_Like_You_(canci%C3%B3n_de_Adele)",
             },
             image: "img/adelle-2.jpeg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
+
+
         {
             title: "Set Fire To The Rain",
             article: "Featured post",
@@ -38,9 +34,6 @@ export default {
                 href: "https://en.wikipedia.org/wiki/Set_Fire_to_the_Rain",
             },
             image: "img/adelle-3.png",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
         {
             title: "Skyfall",
@@ -52,9 +45,6 @@ export default {
                 href: "https://es.wikipedia.org/wiki/Skyfall",
             },
             image: "img/adelle-4.jpg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
         {
             title: "When We Were Young",
@@ -66,9 +56,6 @@ export default {
                 href: "https://es.wikipedia.org/wiki/When_We_Were_Young",
             },
             image: "img/adelle-5.jpg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
         {
             title: "Hello",
@@ -80,9 +67,6 @@ export default {
                 href: "https://es.wikipedia.org/wiki/Hello_(canci%C3%B3n_de_Adele)",
             },
             image: "img/adelle-6.jpg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         },
         {
             title: "Oh My God",
@@ -94,13 +78,10 @@ export default {
                 href: "https://es.wikipedia.org/wiki/Oh_My_God_(canci%C3%B3n_de_Adele)",
             },
             image: "img/adelle-7.jpg",
-                showImage(){
-                    document.querySelector(".Style-img").style.backgroundImage = `url(${this.image})`;
-                }
         }
     ],
 
-    listSliderCardTitle(){
+    /* listSliderCardTitle(){
         let plantilla ="";
             this.post.forEach((val, id) => {
                 plantilla += `
@@ -122,5 +103,24 @@ export default {
                             `
             });
                 document.querySelector(".Slider-card-article").insertAdjacentHTML("beforeend", plantilla);
-    },
+    } */
+
+    show(){
+        const ws = new Worker("storage/wsMyPost.js", {type: "module"})
+
+       
+
+        ws.postMessage({module: "listSliderCardTitle", data: this.post})
+
+       
+
+        ws.addEventListener("message", (e) =>{
+
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+
+            document.querySelector(".Slider-card-article").append(...doc.body.children);
+
+            ws.terminate();
+        })
+    }
 };

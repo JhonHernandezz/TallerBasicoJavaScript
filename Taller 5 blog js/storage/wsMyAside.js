@@ -1,13 +1,14 @@
-let wsMyAside = {
+ export let wsMyAside = {
 
-    showAside(){
-        const data = this.nav.map((val, id) => {
+    showAside(informacion){
+        const data = informacion.map((val, id) => {
             return(
                 (val.link)
                 ?this.list(val) 
                 :this.cards(val) 
             )
         });
+        return data
     },
 
     cards(p1){
