@@ -1,4 +1,4 @@
-export let wsMyPost = {
+let wsMyPost = {
 
     listSliderCardTitle(informacion){
         let plantilla ="";

@@ -7,7 +7,6 @@ import myFooter from "./components/myFooter.js";
 
 myHeader.show();
 
-myBanner.showImage();
 myBanner.show();
 // myBaner.listContentBanner();
 // myBaner.Button();

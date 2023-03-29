@@ -1,9 +1,5 @@
+import config from "../storage/config.js";
 export default{
-    footer:{
-            title:"© Derechos reservados de ",
-            head:"CampusLand",
-            href:"https://campers.tribu.team/"
-    },
 
     /**
     myFooter(){
@@ -20,6 +16,10 @@ export default{
         
     // WORKER LIST 
     show(){
+        
+        config.dataMyFooter();
+        Object.assign(this, JSON.parse(localStorage.getItem("myFooter")));
+
         const ws = new Worker("storage/wsMyFooter.js", {type: "module"});
 
         let id = [];

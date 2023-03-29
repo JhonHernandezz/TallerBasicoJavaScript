@@ -1,4 +1,4 @@
- export let wsMyAside = {
+let wsMyAside = {
 
     showAside(informacion){
         const data = informacion.map((val, id) => {
