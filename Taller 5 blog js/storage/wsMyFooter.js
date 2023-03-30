@@ -6,6 +6,7 @@ let wsMyFooter = {
                 <p><a href="#">Back to top</a></p>
                `;
     }
+    
 }
 
 self.addEventListener("message", (e) => {

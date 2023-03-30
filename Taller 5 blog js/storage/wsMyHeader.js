@@ -16,7 +16,8 @@ let wsMyHeader = {
             plantilla += `<a class="p-2 link-secondary" href="${val.href}">${val.name}</a>`
         });
         return plantilla;
-    },
+    }
+    
 }
 
 self.addEventListener("message", (e) => {

@@ -88,9 +88,7 @@ let wsMySeccion = {
                             ).join("")}     
                             </table><p>${informacion.contentEnd}</p>
 
-                        `;
-                        
-                            
+                        `;            
         return plantilla;
     },
 

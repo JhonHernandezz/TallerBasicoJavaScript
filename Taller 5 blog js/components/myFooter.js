@@ -1,19 +1,6 @@
 import config from "../storage/config.js";
 export default{
-
-    /**
-    myFooter(){
-        let plantilla = "";
-        this.footer.forEach((val, id) => {
-            plantilla += `
-                        <p>${val.title} <a href="${val.href}">${val.head}</a></p>
-                        <p><a href="#">Back to top</a></p>
-                        `
-        });
-        document.querySelector(".footer").insertAdjacentHTML("beforeend", plantilla);
-    }
-    **/
-        
+ 
     // WORKER LIST 
     show(){
         
@@ -40,5 +27,4 @@ export default{
             })
     }
     // ----------------------------------------------------------------
-
 }

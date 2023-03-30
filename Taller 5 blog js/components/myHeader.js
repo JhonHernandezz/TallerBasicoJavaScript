@@ -7,7 +7,6 @@ export default{
         config.dataMyHeader();
         Object.assign(this, JSON.parse(localStorage.getItem("myHeader")));
 
-
         // Creamos el worker en una constante
         const ws = new Worker("storage/wsMyHeader.js", {type: "module"})
 
@@ -42,5 +41,4 @@ export default{
 
     }
     // ----------------------------------------------------------------
-
 }

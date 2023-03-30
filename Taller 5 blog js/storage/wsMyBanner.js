@@ -13,6 +13,7 @@ let wsMyBanner = {
                 </div>
                `
     }
+    
 }
 
 self.addEventListener("message", (e) => {

@@ -25,16 +25,3 @@ export default{
     }
     // ----------------------------------------------------------------
 }
-
-
-/* 
-    <div class="imagen-Banner position-absolute">
-        <img src="banner-adelle.png" alt="">
-      </div>
-      <div class="col-8 col-md-7 col-xl-6 mx-4 py-5">
-        <h1 class="display-4 fst-italic col-12 ">Title of a longer featured blog post</h1>
-        <p class="lead my-3 col-12">Multiple lines of text that form the lede, informing new readers quickly and efficiently
-          about what’s most interesting in this post’s contents.</p>
-        <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-      </div>
-*/
