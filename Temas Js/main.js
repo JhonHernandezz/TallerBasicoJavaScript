@@ -1,5 +1,15 @@
-/* Metodo sqrt */
+/* Metodo ceil */
 
-// retorna la raíz cuadrada de un número
+// devuelve el entero mayor o igual más próximo a un número dado.
 
-console.log(Math.sqrt(29).toFixed(1));
+console.log(Math.ceil(.95));
+// Expected output: 1
+
+console.log(Math.ceil(4));
+// Expected output: 4
+
+console.log(Math.ceil(7.004));
+// Expected output: 8
+
+console.log(Math.ceil(-7.004));
+// Expected output: -7
