@@ -1,8 +1,7 @@
-    /* residuo */
+    /* incremento */
 
-let residuo1 = 5;
-let residuo2 = 6;
+let incremento1 = 5;
 
-let resultado = residuo1 % residuo2 ;
+let resultado = ++incremento1 ;
 
 console.log(resultado)
