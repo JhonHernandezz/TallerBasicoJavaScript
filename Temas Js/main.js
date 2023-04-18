@@ -1,12 +1,17 @@
-/* Metodo search */
+/* Metodo localeCompare */
 
-// ejecuta una búsqueda que encaje entre una expresión regular y el objeto String desde el que se llama.
-// devuelve el indice de la expresión que se esta buscando
+// retorna un número indicando si una cadena de carateres de referencia va antes, 
+// después o si es la misma que la cadena dada en orden alfabético.
+// La letra "a" va antes que "c" por lo que entrega un valor negativo
 
-let cadena1 = 'Esto es una cadena'.search('E'); // 0
-let cadena2 = 'Esto es una cadena'.search('o'); // 3
-let cadena3 = 'Esto es una cadena'.search('d'); // 14
+let codigo1 = 'a'.localeCompare('c'); // -2 o -1 (o cualquier otro valor negativo)
+console.log(codigo1);
 
-console.log(cadena1);
-console.log(cadena2);
-console.log(cadena3);
+// Alfabéticamente la palabra "check" va después que "against" por lo que resulta
+// en un valor positivo.
+let codigo2 = 'check'.localeCompare('against'); // 2 o 1 (u otro valor positivo)
+console.log(codigo2);
+
+// "a" y "a" son equivalentes por lo que resulta en un valor neutral de cero.
+let codigo3 = 'a'.localeCompare('a'); // 0
+console.log(codigo3);
