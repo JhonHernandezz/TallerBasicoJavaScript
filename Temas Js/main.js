@@ -1,8 +1,8 @@
-    /* resta */
+    /* multiplicacion */
 
-let resta1 = 5;
-let resta2 = 6;
+let multiplicacion1 = 5;
+let multiplicacion2 = 6;
 
-let resultado = resta1 - resta2 ;
+let resultado = multiplicacion1 * multiplicacion2 ;
 
 console.log(resultado)
