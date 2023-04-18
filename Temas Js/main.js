@@ -1,8 +1,8 @@
-    /* multiplicacion */
+    /* division */
 
-let multiplicacion1 = 5;
-let multiplicacion2 = 6;
+let division1 = 5;
+let division2 = 6;
 
-let resultado = multiplicacion1 * multiplicacion2 ;
+let resultado = division1 / division2 ;
 
 console.log(resultado)
