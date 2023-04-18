@@ -1,10 +1,10 @@
-    /* Menor o igual que <= */
+    /* AND && */
 
 let numero1 = 5;
 let numero2 = 6;
 
-if(numero1 <= numero2) {
-    console.log(`El numero ${numero1} es menor pero no es igual que ${numero2}`);
+if(numero1 >= 1  && numero2 <= 10) { 
+    console.log(`Verdadero`); // Si numero 1 es mayor o igual 1 y numero 2 es menor o igual a 10
 } else{
-    console.log(`El numero ${numero1} no es menor ni igual que ${numero2}`)
+    console.log(`Falso`) // Si numero 1 no es mayor ni igual a 1 y numero 2 no es menor o igual 10
 }
