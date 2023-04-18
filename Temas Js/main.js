@@ -1,6 +1,6 @@
-/* Metodo toLowerCase */
+/* Metodo toUpperCase */
 
-// devuelve el valor en minúsculas de la cadena que realiza la llamada.
+// método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada.
 
-let textoMayusculas="ALFABETO"
-console.log(textoMayusculas.toLowerCase())
+let textoMayusculas="alfabeto"
+console.log(textoMayusculas.toLocaleUpperCase())
