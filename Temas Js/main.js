@@ -1,9 +1,15 @@
-/* Metodo match */
+/* Metodo matchAll */
 
-// devuelve todas las ocurrencias de una expresión regular dentro de una cadena.
+// retorna un iterador de todos los resultados de ocurrencia en una cadena de texto contra una expresión regular, 
+// incluyendo grupos de captura.
 
-let codigo1 = 'Para más información, consulte el Capítulo 3.4.5.1';
-let re = /consulte el (capítulo \d+(\.\d)*)/i;
-let found = codigo1.match(re)
+const regexp = /t(e)(st(\d?))/g;
+const str = 'test1test2';
 
-console.log(found);
+const array = [...str.matchAll(regexp)];
+
+console.log(array[0]);
+// Expected output: Array ["test1", "e", "st1", "1"]
+
+console.log(array[1]);
+// Expected output: Array ["test2", "e", "st2", "2"]
