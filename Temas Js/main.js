@@ -1,7 +1,10 @@
-/* Metodo substring */
+/* Metodo split */
 
-// devuelve un subconjunto de un objeto String.  
+// divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas.
 
-let repetir1 = "La mañana se nos echa encima.";
+let nombres = "Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand ";
+console.log(nombres);
 
-console.log(repetir1.substring(0,10));
+let expresionRegular = " ";
+let listaNombres = nombres.split(expresionRegular);
+console.log(listaNombres);
