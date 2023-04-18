@@ -1,10 +1,7 @@
-/* Metodo slice */
+/* Metodo substring */
 
-// extrae una sección de una cadena y devuelve una cadena nueva.
-// elimina los valores que se le den
+// devuelve un subconjunto de un objeto String.  
 
 let repetir1 = "La mañana se nos echa encima.";
-let repetir2 = repetir1.slice(3, -7); // La mañana se nos echa
 
-console.log(repetir1);
-console.log(repetir2);
+console.log(repetir1.substring(0,10));
