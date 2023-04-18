@@ -1,10 +1,8 @@
-/* Operadores aritmeticos */
-     
-        /* suma */
+    /* resta */
 
-let suma1 = 5;
-let suma2 = 6;
+let resta1 = 5;
+let resta2 = 6;
 
-let resultado = suma1 + suma2 ;
+let resultado = resta1 - resta2 ;
 
 console.log(resultado)
