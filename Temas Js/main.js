@@ -1,7 +1,7 @@
-/* Metodo max */
+/* Metodo min */
 
-// retorna el mayor de cero o más números dados como parámetros de entrada, o NaN si cualquier parámetro no es un número y no puede ser convertido en uno.
+// Devuelve el numero menor de la lista
 
 let decimal = [1, 3, 4, 7, 1];
 
-console.log(Math.max(...decimal));
+console.log(Math.min(...decimal));
