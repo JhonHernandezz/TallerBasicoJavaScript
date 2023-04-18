@@ -1,10 +1,7 @@
-/* Metodo PI */
+/* Metodo max */
 
-// representa la relacion entre la longitud de la circunferencia de un circulo y su diametro, la cual es aproximadamente 3.14159.
+// retorna el mayor de cero o más números dados como parámetros de entrada, o NaN si cualquier parámetro no es un número y no puede ser convertido en uno.
 
-function calculaCircunferencia(radio) {
-    return 2 * Math.PI * radio;
-}
+let decimal = [1, 3, 4, 7, 1];
 
-let resultado = calculaCircunferencia(1);  // 6.283185307179586
-console.log(resultado);
+console.log(Math.max(...decimal));
