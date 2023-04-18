@@ -1,10 +1,11 @@
-/* Metodo codePointAt */
+/* Metodo fromCharCode */
 
-// devuelve un entero no negativo que equivale al valor Unicode code point del carácter.
+// devuelve la letra de la cual le estamos pasando el numero
+// método estático que devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
 
-let codigo1 = 'ABC'.codePointAt(1);          // 66
-let codigo2 = '\uD800\uDC00'.codePointAt(0); // 65536
-let codigo3 = 'XYZ'.codePointAt(52); // undefined
+let codigo1 = String.fromCharCode(65,79,67)
+let codigo2 = String.fromCharCode(60,73,78)
+let codigo3 = String.fromCharCode(62,75,98)
 
 console.log(codigo1)
 console.log(codigo2)
