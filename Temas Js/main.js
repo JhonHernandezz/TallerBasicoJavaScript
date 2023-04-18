@@ -1,8 +1,12 @@
-    /* exponenciacion */
+/* Operadores de comparacion */
 
-let exponenciacion1 = 5;
-let exponenciacion2 = 3;
+            /* igual == */
 
-let resultado = exponenciacion1 ** exponenciacion2;
+let numero1 = 5;
+let numero2 = 6;
 
-console.log(resultado)
+if(numero1 == numero2) {
+    console.log("Verdadero");
+} else{
+    console.log("Falso")
+}
