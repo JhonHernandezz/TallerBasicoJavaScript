@@ -1,8 +1,8 @@
-    /* division */
+    /* residuo */
 
-let division1 = 5;
-let division2 = 6;
+let residuo1 = 5;
+let residuo2 = 6;
 
-let resultado = division1 / division2 ;
+let resultado = residuo1 % residuo2 ;
 
 console.log(resultado)
