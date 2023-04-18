@@ -1,14 +1,12 @@
-/* Metodo lastIndexOf */
+/* Metodo search */
 
-// devuelve el índice del valor que le demos, sea una letra o una palabra
-// empieza la busqueda desde el final hasta el principio
-// el método lastIndexOf es sensible a mayúsculas.
-// si no encuentra la letra el valor sera -1
+// ejecuta una búsqueda que encaje entre una expresión regular y el objeto String desde el que se llama.
+// devuelve el indice de la expresión que se esta buscando
 
-let codigo1 = "canal".lastIndexOf("a"); // 3
-let codigo2 = "Ballena azul".lastIndexOf("a"); // 8
-let codigo3 = "Ballena Azul".lastIndexOf("f"); // -1
+let cadena1 = 'Esto es una cadena'.search('E'); // 0
+let cadena2 = 'Esto es una cadena'.search('o'); // 3
+let cadena3 = 'Esto es una cadena'.search('d'); // 14
 
-console.log(codigo1);
-console.log(codigo2);
-console.log(codigo3);
+console.log(cadena1);
+console.log(cadena2);
+console.log(cadena3);
