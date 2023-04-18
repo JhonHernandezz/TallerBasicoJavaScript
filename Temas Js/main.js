@@ -1,9 +1,13 @@
-/* Metodo concat */
+/* Metodo indexOf */
 
-// combina dos o más cadenas de texto y devuelve una cadena de texto nueva.
+// devuelve el índice del valor que le demos, sea una letra o una palabra
+// solo devuelve el indice de la primera letra que estemos buscando 
+// si no encuentra la letra el valor sera -1
 
-let codigo1 = 'Hello';
-let codigo2 = 'World';
-let codigo3 = 'God';
+let codigo1 = "Ballena Azul".indexOf("a"); // 1
+let codigo2 = "Ballena Azul".indexOf("z"); // 9
+let codigo3 = "Ballena Azul".indexOf("f"); // -1
 
-console.log(codigo1.concat(' ', codigo2.concat(' ', codigo3)));
+console.log(codigo1);
+console.log(codigo2);
+console.log(codigo3);
