@@ -1,12 +1,9 @@
-/* Metodo fromCharCode */
+/* Metodo concat */
 
-// devuelve la letra de la cual le estamos pasando el numero
-// método estático que devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
+// combina dos o más cadenas de texto y devuelve una cadena de texto nueva.
 
-let codigo1 = String.fromCharCode(65,79,67)
-let codigo2 = String.fromCharCode(60,73,78)
-let codigo3 = String.fromCharCode(62,75,98)
+let codigo1 = 'Hello';
+let codigo2 = 'World';
+let codigo3 = 'God';
 
-console.log(codigo1)
-console.log(codigo2)
-console.log(codigo3)
+console.log(codigo1.concat(' ', codigo2.concat(' ', codigo3)));
