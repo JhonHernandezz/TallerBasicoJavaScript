@@ -1,17 +1,9 @@
-/* Metodo localeCompare */
+/* Metodo match */
 
-// retorna un número indicando si una cadena de carateres de referencia va antes, 
-// después o si es la misma que la cadena dada en orden alfabético.
-// La letra "a" va antes que "c" por lo que entrega un valor negativo
+// devuelve todas las ocurrencias de una expresión regular dentro de una cadena.
 
-let codigo1 = 'a'.localeCompare('c'); // -2 o -1 (o cualquier otro valor negativo)
-console.log(codigo1);
+let codigo1 = 'Para más información, consulte el Capítulo 3.4.5.1';
+let re = /consulte el (capítulo \d+(\.\d)*)/i;
+let found = codigo1.match(re)
 
-// Alfabéticamente la palabra "check" va después que "against" por lo que resulta
-// en un valor positivo.
-let codigo2 = 'check'.localeCompare('against'); // 2 o 1 (u otro valor positivo)
-console.log(codigo2);
-
-// "a" y "a" son equivalentes por lo que resulta en un valor neutral de cero.
-let codigo3 = 'a'.localeCompare('a'); // 0
-console.log(codigo3);
+console.log(found);
