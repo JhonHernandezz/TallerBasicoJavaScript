@@ -1,5 +1,5 @@
-/* Metodo random */
+/* Metodo sqrt */
 
-// Devuelve un numero ramdom
+// retorna la raíz cuadrada de un número
 
-console.log(Math.random().toFixed(3));
+console.log(Math.sqrt(29).toFixed(1));
