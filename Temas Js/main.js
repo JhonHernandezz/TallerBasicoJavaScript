@@ -1,10 +1,10 @@
-    /* OR || */
+/* libreria matematica */
 
-let numero1 = 5;
-let numero2 = 6;
+  /* Metodo ToFixed */
 
-if(numero1 >= 1  || numero2 <= 10) { 
-    console.log(`Verdadero`); // Si numero 1 es mayor o igual 1 o numero 2 es menor o igual a 10
-} else{
-    console.log(`Falso`) // Si numero 1 no es mayor ni igual a 1 o numero 2 no es menor o igual 10
-}
+// Devuelve la cantidad de decimales que se le pidan 
+
+let decimal = 12345.6789;
+let resultado = decimal.toFixed(2);
+
+console.log(resultado);
