@@ -1,5 +1,6 @@
-/* Metodo floor */
+/* Metodo round */
 
-// Devuelve el máximo entero menor o igual a un número.
+// retorna el valor de un número redondeado al entero más cercano.
 
-console.log(Math.floor(59));
+console.log(Math.round(12.2));
+console.log(Math.round(18.8));
