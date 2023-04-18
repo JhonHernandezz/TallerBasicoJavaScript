@@ -1,10 +1,10 @@
-/* libreria matematica */
+/* Metodo PI */
 
-  /* Metodo ToFixed */
+// representa la relacion entre la longitud de la circunferencia de un circulo y su diametro, la cual es aproximadamente 3.14159.
 
-// Devuelve la cantidad de decimales que se le pidan 
+function calculaCircunferencia(radio) {
+    return 2 * Math.PI * radio;
+}
 
-let decimal = 12345.6789;
-let resultado = decimal.toFixed(2);
-
+let resultado = calculaCircunferencia(1);  // 6.283185307179586
 console.log(resultado);
