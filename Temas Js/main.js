@@ -1,6 +1,5 @@
-/* Metodo round */
+/* Metodo trunc */
 
-// retorna el valor de un número redondeado al entero más cercano.
+// devuelve la parte entera de un numero removiendo cualquier dígito decimal (dígitos situados después de la coma).
 
-console.log(Math.round(12.2));
-console.log(Math.round(18.8));
+console.log(Math.trunc(12.8));
