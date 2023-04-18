@@ -1,7 +1,7 @@
-/* Metodo min */
+/* Metodo pow */
 
-// Devuelve el numero menor de la lista
+// devuelve la base elevada al exponente , esto es, baseexponente
 
-let decimal = [1, 3, 4, 7, 1];
-
-console.log(Math.min(...decimal));
+console.log(Math.pow(7, 2));    // 49
+console.log(Math.pow(7, 3));    // 343
+console.log(Math.pow(2, 3));   // 1024
